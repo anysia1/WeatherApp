@@ -1,0 +1,113 @@
+:root {
+  --navbar-height: 50px;
+  --footer-height: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1,
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  color: #221e2b;
+}
+
+.weather-app {
+  background: url(weather.jpg) no-repeat center bottom;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.weather-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #4d4949;
+  margin-bottom: 20px;
+}
+
+#location {
+  margin-bottom: 20px;
+}
+
+.current_weather,
+.current_sun {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.current_degree {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.current_degree>span {
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.current_condition {
+  line-height: 1.2;
+}
+
+.current_sun i {
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+
+.upcoming_forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.days_weather {
+  flex-basis: calc(50% - 20px);
+  background-color: rgba(0, 52, 113, 0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.days_weather p {
+  margin-bottom: 10px;
+}
+
+.days_weather img {
+  max-width: 50px;  /* Set a maximum width for small-sized images */
+  height: auto;
+  margin: 10px auto;
+}
+
+.condition {
+  font-size: 16px;
+}
+
+.high_temp,
+.low_temp {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .days_weather {
+    flex-basis: 100%;
+  }
+}
