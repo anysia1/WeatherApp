@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add this style for small-sized images */
+        .img-responsive {
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h1 class="weather-title">Weather App</h1>
+            <h3 id="location"><i class="ion-ios-location"></i> <span>Kigali, Rwanda</span></h3>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="row current_weather">
+                        <div class="col-xs-6 col-lg-12">
+                        </div>
+                        <div class="col-xs-6 col-lg-12">
+                          <img id="curr_weather_icon" src="dots.PNG" class="img-responsive">
+                            <div id="temp" class="current_degree">26 <span>&deg;C</span></div>
+                            <div class="current_condition">Rain tonight</div>
+                        </div>
+                    </div>
+                <div class="col-lg-9">
+                    <div class="row current_sun">
+                        <div class="col-xs-6 col-lg-3">
+                            <i class="ion-ios-sunny"></i>
+                            <div>
+                              <img id="curr_weather_icon" src="sun.PNG" class="img-responsive">
+                                Sunrise<br>
+                                <span id="sunrise">6:30 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-lg-3">
+                            <i class="ion-ios-moon"></i>
+                            <div>
+                              <img id="curr_weather_icon" src="moon.PNG" class="img-responsive">
+                                Sunset<br>
+                                <span id="sunset">5:15 PM</span>
+                            </div>
+                        </div>
+                    </div>
+        <div class="upcoming_forecast owl-carousel owl-theme text-center">
+          <div class="days_weather">
+            <img src="all.png" class="img-responsive">
+            <p class="days">Mon</p>
+            <p class="date">Tomorrow</p>
+            <p class="condition">Partly Cloudly</p>
+            <div class="high_temp">
+              40 &deg;
+            </div>
+            <div class="low_temp">
+              42 &deg;
+            </div>
+          </div>
+
+          <div class="days_weather">
+            <img src="dots.png" class="img-responsive">
+            <p class="days">Tues</p>
+            <p class="date">Dce 12</p>
+            <p class="condition">Partly Cloudly</p>
+            <div class="high_temp">
+              46 &deg;
+            </div>
+            <div class="low_temp">
+              42 &deg;
+            </div>
+          </div>
+
+          <div class="days_weather">
+            <img src="sun.png" class="img-responsive">
+            <p class="days">Wed</p>
+            <p class="date">Dec 13</p>
+            <p class="condition">Sunny</p>
+            <div class="high_temp">
+              50 &deg;
+            </div>
+            <div class="low_temp">
+              57 &deg;
+            </div>
+          </div>
+
+          <div class="days_weather">
+            <img src="cloudly.png" class="img-responsive">
+            <p class="days">Thus</p>
+            <p class="date">Dec 14</p>
+            <p class="condition">Mostly Sunny</p>
+            <div class="high_temp">
+              52 &deg;
+            </div>
+            <div class="low_temp">
+              47 &deg;
+            </div>
+          </div>
+
+          <div class="days_weather">
+            <img src="cloudly.png" class="img-responsive">
+            <p class="days">Fri</p>
+            <p class="date">Dec 15</p>
+            <p class="condition">Partly Sunny w/ Showers</p>
+            <div class="high_temp">
+              40 &deg;
+            </div>
+            <div class="low_temp">
+              37 &deg;
+            </div>
+          </div>
+
+          <div class="days_weather">
+            <img src="dots.png" class="img-responsive">
+            <p class="days">Sat</p>
+            <p class="date">Dec 16</p>
+            <p class="condition">Cloudly</p>
+            <div class="high_temp">
+              45 &deg;
+            </div>
+            <div class="low_temp">
+              36 &deg;
+            </div>
+
+<div id="latlang"></div>
+<script src="app.js"></script>
+          </body>
+          </html>
